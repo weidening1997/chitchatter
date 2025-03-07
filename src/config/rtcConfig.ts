@@ -15,9 +15,14 @@ export const rtcConfig: RTCConfiguration = {
       username: 'efQUQ79N77B5BNVVKF',
       credential: 'N4EAUgpjMzPLrxSS',
     },
-    // Free Google STUN server for basic NAT traversal.
+      {
+      urls: 'stun:stun.qq.com:3478', // 腾讯云 STUN 服务器
+    },
     {
-      urls: 'stun:stun.l.google.com:19302',
+      urls: 'stun:stun.mxhichina.com:3478', // 阿里云 STUN 服务器
+    },
+    {
+      urls: 'stun:stun.l.google.com:19302', // Google 公共 STUN 服务器
     },
   ],
 }
